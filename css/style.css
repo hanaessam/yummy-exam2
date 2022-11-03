@@ -1,0 +1,235 @@
+:root {
+  --navbarWidth: 250px;
+}
+
+* {
+  font-weight: 100;
+}
+
+body {
+  background-color: black;
+}
+
+/* Nav Slider */
+
+.nav-slider {
+  background-color: white;
+  width: 3.5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 99999999;
+  transition: 0.3 all ease-in-out;
+}
+
+.nav-slider i:hover {
+  cursor: pointer;
+  color: #fdcf10;
+}
+
+/* Nav Sections */
+
+.nav-sections {
+  width: var(--navbarWidth);
+  background-color: black;
+  z-index: 99999;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  position: fixed;
+  left: -250px;
+  top: 0;
+  transition: 0.3s all ease-in-out;
+}
+.nav-sections li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.nav-sections a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-sections a:hover {
+  color: #fdcf10;
+}
+
+.nav-sections i:hover {
+  cursor: pointer;
+  color: #fdcf10;
+}
+
+.active {
+  left: 0;
+}
+
+.non-active {
+  left: 250px;
+}
+
+/* Main Section */
+
+.meal-card {
+  width: 230px;
+  height: 230px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.meal-card-layer {
+  width: 230px;
+  height: 230px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  bottom: -250px;
+  transition: 0.5s all ease-in-out;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+.meal-card:hover .meal-card-layer {
+  bottom: 0;
+  cursor: pointer;
+}
+
+.category-card {
+  width: 230px;
+  height: 180px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.category-card-layer {
+  width: 230px;
+  height: 180px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  bottom: -250px;
+  transition: 0.5s all ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.5rem;
+  overflow: hidden;
+  
+}
+.category-card-layer p {
+  font-weight: 400;
+}
+.category-card:hover .category-card-layer {
+  bottom: 0;
+  cursor: pointer;
+}
+.desc-text{
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.loading-screen {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999999999;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.complete-loading {
+  display: none;
+}
+
+.search-bar {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  border: none;
+  border-bottom: grey 2px solid;
+  outline: none;
+  padding-bottom: 0.25rem;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+.search-bar:focus{
+  box-shadow: 0 0 0 3px #fdce1052;
+}
+
+.area-card{
+  display: flex;
+  flex-direction: column;
+  color: #e65a50ab;
+  background-color: black;
+  box-shadow: 0px 15px 0px 8px rgba(51, 51, 51, 0.288);
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.area-card p {
+  color: white;
+  font-size: 1.7rem;
+}
+
+.ingredients-card{
+  display: flex;
+  flex-direction: column;
+  color: #9ee650ab;
+  background-color: black;
+  box-shadow: 0px 15px 0px 8px rgba(51, 51, 51, 0.288);
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  text-align: center;
+}
+.ingredients-card p {
+  color: white;
+  font-size: 1.7rem;
+}
+.ing-desc{
+  color: white;
+  height: 100px;
+  overflow: hidden;
+}
+
+.label{
+  color: white;
+}
+.label h6{
+  font-size: 2rem;
+}
+
+
+.input-deco{
+  background-color: black;
+  width: 100%;
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: 2px solid grey;
+  padding-bottom: 0.25rem;
+  box-shadow: 0px 9px 15px 0px rgba(255, 255, 255, 0.192);
+}

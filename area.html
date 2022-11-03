@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Yummy</title>
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+		<i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+	</div>
+
+  <!--  Side Navbar -->
+  <div class="nav-slider p-1">
+    <div class="logo pt-3"><img src="images/logo (1).png" alt="logo" class="w-100"></div>
+    <div class="hamburger sidebarBtn"><i onclick="toggleHamburger(this)" class="fa-solid fa-bars fa-xl"></i></div>
+    <div class="contact-icons d-flex flex-column p-2">
+      <i class="fa-solid fa-globe"></i>
+      <i class="fa-solid fa-share-nodes mt-2"></i>
+    </div>
+  </div>
+  <!-- Navbar -->
+  <div class="nav-sections pt-4" id="mySidenav">
+    <ul>
+      <li><a href="search.html">Search</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="area.html">Area</a></li>
+      <li><a href="ingredients.html">Ingredients</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-footer ps-4 pb-3">
+      <div class="nav-icon pb-2">
+        <i class="fa-brands fa-facebook-f me-3"></i>
+        <i class="fa-brands fa-twitter me-3"></i>
+        <i class="fa-solid fa-globe"></i>
+      </div>
+      <div class="copyrights text-white">
+        <p>Copyright © 2019 All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category Section -->
+  <section class="main-section">
+    <div class="container p-5">
+      <div class="row areaRow mt-5">
+        <!-- <div class="col-lg-3 col-sm-6">
+            <div class="area-card">
+                <i class="fa-solid fa-city fa-3x"></i>
+                <p>Area</p>
+            </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+
+</html>

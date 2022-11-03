@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy</title>
+</head>
+
+<body>
+
+
+    <!--  Side Navbar -->
+    <div class="nav-slider p-1">
+        <div class="logo pt-3"><img src="images/logo (1).png" alt="logo" class="w-100"></div>
+        <div class="hamburger sidebarBtn"><i onclick="toggleHamburger(this)" class="fa-solid fa-bars fa-xl"></i></div>
+        <div class="contact-icons d-flex flex-column p-2">
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-share-nodes mt-2"></i>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="nav-sections pt-4" id="mySidenav">
+        <ul>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="area.html">Area</a></li>
+            <li><a href="ingredients.html">Ingredients</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-footer ps-4 pb-3">
+            <div class="nav-icon pb-2">
+                <i class="fa-brands fa-facebook-f me-3"></i>
+                <i class="fa-brands fa-twitter me-3"></i>
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="copyrights text-white">
+                <p>Copyright © 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="main-section">
+        <div class="container p-5">
+            <div class="row mt-5">
+                <div class="text-center label">
+                    <h6>Contact Us</h6>
+                </div>
+                <div class="container p-5">
+                    <div class="row px-5 text-center">
+                        <div class="col-6">
+                            <input type="text" class="input-deco" placeholder="Enter your name">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="input-deco" placeholder="Enter your email">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="input-deco" placeholder="Enter your phone">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="input-deco" placeholder="Enter your age">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="input-deco" placeholder="Enter your password">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="input-deco" placeholder="Enter your repassword">
+                        </div>
+
+                        <button class="btn btn-outline-danger w-auto m-auto my-4"> Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>
